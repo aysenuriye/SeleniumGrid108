@@ -22,7 +22,7 @@ public class FirstGridTest {
     public void  test02(){
 
 
-        driver=remouteEdgeDriver();
+        driver=remouteChromeDriver();
         driver.get("https://youtube.com");
         System.out.println(driver.getCurrentUrl());
 

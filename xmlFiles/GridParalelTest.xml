@@ -2,7 +2,7 @@
 <suite name="Class'lari paralel calistirma" parallel="tests" thread-count="2" >
 
     <test name="Sirali crosbrowser chrome">
-        <parameter name="browser" value="grid_chrome"></parameter>
+        <parameter name="browser" value="grid_edge"></parameter>
         <classes>
             <class name="tests.SecondGridTest"></class>
 
@@ -10,7 +10,7 @@
     </test>
 
     <test name="Sirali crosbrowser msedge">
-        <parameter name="browser" value="grid_IE"></parameter>
+        <parameter name="browser" value="grid_"></parameter>
         <classes>
 
             <class name="tests.ThirdGridTest"></class>

@@ -30,7 +30,7 @@ public class DriverManage {  //proje içerisine eklediğim  browser driverların
                 // FirefoxOptions firefoxOptions = new FirefoxOptions();
                 // firefoxOptions.addArguments("start-maximized");
                 try {
-                    driver = new RemoteWebDriver(new URL("http://192.168.0.32:4444/ui"), new FirefoxOptions());
+                    driver = new RemoteWebDriver(new URL("http://192.168.0.32:4444"), new FirefoxOptions());
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
@@ -41,7 +41,7 @@ public class DriverManage {  //proje içerisine eklediğim  browser driverların
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("start-maximized");
                 try {
-                    driver = new RemoteWebDriver(new URL("http://192.168.0.32:4444/ui"),  new ChromeOptions());
+                    driver = new RemoteWebDriver(new URL("http://192.168.0.32:4444"),  new ChromeOptions());
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
@@ -52,7 +52,7 @@ public class DriverManage {  //proje içerisine eklediğim  browser driverların
                 EdgeOptions edgeOptions = new EdgeOptions();
                 //edgeOptions.addArguments("start-maximized");
                 try {
-                    driver = new RemoteWebDriver(new URL("http://192.168.0.32:4444/ui"), new  EdgeOptions () );
+                    driver = new RemoteWebDriver(new URL("http://192.168.0.32:4444"), new  EdgeOptions () );
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
@@ -63,7 +63,7 @@ public class DriverManage {  //proje içerisine eklediğim  browser driverların
                 InternetExplorerOptions ieOptions = new InternetExplorerOptions();
                 // ieOptions.addArguments("start-maximized");
                 try {
-                    driver = new RemoteWebDriver(new URL("http://192.168.0.32:4444/ui"), ieOptions);
+                    driver = new RemoteWebDriver(new URL("http://192.168.0.32:4444"), ieOptions);
                 } catch (MalformedURLException e) {
                     throw new RuntimeException(e);
                 }
